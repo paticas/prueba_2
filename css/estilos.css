@@ -1,0 +1,147 @@
+html{
+	width: 100%;
+	background-color: black;
+}
+.contenedor{
+	width: 900px;
+	font-family: 'Dancing Script';
+	font-size: 15px;
+	background-color: #02010a;
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+	animation-duration: 1s;
+	animation-name: slidein;
+
+
+}
+#cabecera{
+	background-color: #5b7989;
+	text-shadow: 2px;
+	color:#02010a;
+	border-radius:  10px 10px 0px 0px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+#menuCabecera{
+	text-align: right;
+	text-shadow: 2px 2px #02010a;
+
+	
+
+}
+p{
+	text-align: center;
+}
+h1{
+	text-align: left;
+	color:white;
+}
+#contenedor{
+	text-align: left;
+	background: #5b7989;
+	border-radius: 10px 10px 0 0;
+	color: white;
+	text-shadow: 2px 2px #02010a;
+
+}
+#central{
+	width: 100%;
+	background-color: #82c3a6;
+	text-align: center;
+
+}
+.secundaria{
+	background-color: #d5c75f;
+	border: 1px;
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	text-align: center;
+	text-shadow: 2px 2px #02010a;
+
+
+}
+#izquierda:hover {
+	-webkit-transform:skew(0deg,10deg);
+	transform: skew(0deg,10deg);
+	text-shadow: 2px 2px #02010a;
+	float: left;
+	display: inline-block;
+
+	
+}
+#derecha:hover{
+	transform: translate(5px, -20px);
+	text-shadow: 2px 2px #02010a;
+	float: right;
+	display: inline-block;
+}
+a {
+	text-align: center;
+
+}
+footer{
+	background-color: #C6d5c5;
+	display: flex;
+	flex-wrap: wrap;
+	color: black;
+	box-sizing: border-box;
+	clear: both;
+	justify-content: space-around;
+	align-items: center;
+}
+img{
+	width: 43%;
+
+}
+.icon-social{
+	width: 5%;
+
+}
+
+
+@media (max-width: 900px) {
+.secundaria {
+width: 100%;
+background-color:  #d5c75f;
+display: block;
+
+}
+
+#derecha{
+background:  #d5c75f;
+clear: both;
+bottom: 0;
+
+}
+
+}
+@media (min-width: 250px) and (max-width: 420px){
+	
+	.contenedor{
+		width: 100%;
+		background-color: #C6d5c5;
+	}
+	footer{
+		margin: 10px;
+		display: inline;
+	}
+}
+@keyframes slidein{
+	0%{
+		margin-top: 150%;
+		width: 300%
+	}
+	60%{
+		margin-top: -5%;
+		width: 200%
+	}
+	100%{
+		margin-top: 0%;
+		width: 100%;
+	}
+	}
+
